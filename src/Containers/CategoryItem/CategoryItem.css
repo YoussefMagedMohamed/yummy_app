@@ -1,0 +1,36 @@
+.category {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 15px;
+}
+
+.category-content {
+  width: 100%;
+  position: relative;
+  padding: 20px 10px;
+  transition: all 0.5;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: rgba(190, 185, 175, 1);
+}
+
+.category-layer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.5s;
+}
+
+.category:hover .category-layer {
+  top: 0;
+}
+
