@@ -14,16 +14,30 @@ export let getMealsArea = async () => {
       return data.meals
 }
 
-export let getItemDetails = async () => {
-    let { data } = await axios.get(
-        `https://www.themealdb.com/api/json/v1/1/lookup.php?i=52772`
-      );
-      return data.meals;
-}
+// export let getItemDetails = async (id) => {
+//     let { data } = await axios.get(
+//         `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`
+//       );
+//       return data.meals;
+// }
 
 export let getMealsCategory = async () => {
     let { data } = await axios.get(
         "https://www.themealdb.com/api/json/v1/1/categories.php"
       );
       return data.categories
+}
+
+export let getItemCategory = async (id) => {
+  let { data } = await axios.get(
+      `https://www.themealdb.com/api/json/v1/1/categories.php`
+    );
+    return data.meals;
+}
+
+export let getItemsArea = async () => {
+  let { data } = await axios.get(
+      `https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian`
+    );
+    return data.meals;
 }

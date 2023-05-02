@@ -7,7 +7,7 @@ const Item = (props) => {
 
   return (
     <div className="col-lg-3 col-md-4 col-sm-6">
-      <Link to="/itemDetails">
+      <Link to={`/itemDetails/${idMeal}`}>
         <div className="item">
           <img src={strMealThumb} alt="meal" className="w-100" />
           <div className="item-layer">

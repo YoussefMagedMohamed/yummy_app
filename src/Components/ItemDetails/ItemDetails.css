@@ -1,0 +1,22 @@
+.categoryName , .areaName {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2rem;
+    color: var(--font-color);
+    font-family: var(---font-family);
+}
+
+.categoryName > h1, .areaName > h1 {
+    margin-right: 1rem;
+}
+
+.col-md-7 > h1 {
+    color: var(--font-color);
+    margin: 1rem 2rem;
+}
+
+.overview {
+    font-family: var(--font-family);
+    font-size: 22px;
+}

@@ -7,6 +7,8 @@ import Area from "./Components/Area/Area";
 import RootLayout from "./Components/RootLayout/RootLayout";
 import NotFound from "./Containers/NotFound/NotFound";
 import Search from "./Components/Search/Search";
+import ItemsCategory from "./Components/ItemsCategory/ItemsCategory";
+import { ItemsArea } from "./Components/ItemsArea/ItemsArea";
 import ItemDetails from "./Components/ItemDetails/ItemDetails";
 
 function App() {
@@ -20,7 +22,9 @@ function App() {
         { path: "category", element: <Category /> },
         { path: "area", element: <Area /> },
         { path: "search", element: <Search /> },
-        { path: "itemDetails", element: <ItemDetails /> },
+        { path: "itemDetails/:id", element: <ItemDetails /> },
+        { path: "ItemsCategory", element: <ItemsCategory /> },
+        { path: "itemsArea", element: <ItemsArea /> },
         { path: "*", element: <NotFound /> },
       ],
     },

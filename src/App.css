@@ -15,8 +15,10 @@
 body {
   background-color: var(--bg-color);
   font-family: var(--font-family);
+
 }
 
 span {
   color: #336666 !important;
 }
+
