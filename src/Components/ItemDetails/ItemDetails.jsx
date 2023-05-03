@@ -2,6 +2,9 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "../ItemDetails/ItemDetails.css";
+import Loading from "../../Containers/Loading/Loading";
+import Disconnected from "../Disconnected/Disconnected";
+import { Offline } from "react-detect-offline";
 
 const ItemDetails = () => {
   let { id } = useParams();
@@ -21,7 +24,10 @@ const ItemDetails = () => {
     getItemDetails(id);
   }, []);
 
-  return details.map((value, index) => (
+  return(<>
+    <Offline><Disconnected/></Offline>
+
+      {details.length>0?details.map((value, index) => (
     <div key={index} data={value} className="container mt-5">
       <div className="row">
         <div className="col-md-5">
@@ -48,8 +54,15 @@ const ItemDetails = () => {
           <p>{details[0].strInstructions}</p>
         </div>
       </div>
+      <div className="row">
+      
+        {details.map((value , index) => <div>
+          <p>{value.strIngredient1}</p>
+        </div>)} 
+      </div>
     </div>
-  ));
+  )):<Loading/>}
+  </>) 
 };
 
 export default ItemDetails;

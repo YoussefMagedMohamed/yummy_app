@@ -14,13 +14,6 @@ export let getMealsArea = async () => {
       return data.meals
 }
 
-// export let getItemDetails = async (id) => {
-//     let { data } = await axios.get(
-//         `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`
-//       );
-//       return data.meals;
-// }
-
 export let getMealsCategory = async () => {
     let { data } = await axios.get(
         "https://www.themealdb.com/api/json/v1/1/categories.php"
@@ -28,16 +21,16 @@ export let getMealsCategory = async () => {
       return data.categories
 }
 
-export let getItemCategory = async (id) => {
+export let getItemsArea = async (area) => {
   let { data } = await axios.get(
-      `https://www.themealdb.com/api/json/v1/1/categories.php`
+      `https://www.themealdb.com/api/json/v1/1/filter.php?a=${area}`
     );
     return data.meals;
 }
 
-export let getItemsArea = async () => {
+export let getItemsCategory = async (category) => {
   let { data } = await axios.get(
-      `https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian`
+      `https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`
     );
     return data.meals;
 }

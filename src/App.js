@@ -7,9 +7,9 @@ import Area from "./Components/Area/Area";
 import RootLayout from "./Components/RootLayout/RootLayout";
 import NotFound from "./Containers/NotFound/NotFound";
 import Search from "./Components/Search/Search";
-import ItemsCategory from "./Components/ItemsCategory/ItemsCategory";
 import { ItemsArea } from "./Components/ItemsArea/ItemsArea";
 import ItemDetails from "./Components/ItemDetails/ItemDetails";
+import ItemsCategory from "./Containers/ItemsCategory/ItemsCategory";
 
 function App() {
   let routers = createBrowserRouter([
@@ -23,8 +23,8 @@ function App() {
         { path: "area", element: <Area /> },
         { path: "search", element: <Search /> },
         { path: "itemDetails/:id", element: <ItemDetails /> },
-        { path: "ItemsCategory", element: <ItemsCategory /> },
-        { path: "itemsArea", element: <ItemsArea /> },
+        { path: "ItemsCategory/:category", element: <ItemsCategory /> },
+        { path: "itemsArea/:area", element: <ItemsArea /> },
         { path: "*", element: <NotFound /> },
       ],
     },
