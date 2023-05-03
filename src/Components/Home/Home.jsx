@@ -13,7 +13,7 @@ const Home = () => {
     setMeals(meals);
   };
 
-  console.log(Meals);
+
 
   useEffect(() => {
     getData();

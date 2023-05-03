@@ -18,7 +18,6 @@ const ItemDetails = () => {
     setDetails(data.meals);
   }
 
-  console.log(details[0]);
 
   useEffect(() => {
     getItemDetails(id);

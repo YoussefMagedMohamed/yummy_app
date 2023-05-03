@@ -12,7 +12,6 @@ const Area = () => {
     setAreas(areas);
   };
 
-  console.log(Areas);
 
   useEffect(() => {
     getData();

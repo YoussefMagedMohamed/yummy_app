@@ -16,7 +16,7 @@ export const ItemsArea = () => {
     setItemsArea(items);
   };
 
-  console.log(ItemsArea);
+
 
   useEffect(() => {
     getData();
