@@ -19,7 +19,7 @@ const Area = () => {
 
   return (
     <>
-    <Offline><Disconnected/></Offline>
+    {/* <Offline><Disconnected/></Offline> */}
 
       <div className="container my-5">
         <div className="row">

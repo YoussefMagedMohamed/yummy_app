@@ -24,7 +24,7 @@ const ItemDetails = () => {
   }, []);
 
   return(<>
-    <Offline><Disconnected/></Offline>
+    {/* <Offline><Disconnected/></Offline> */}
 
       {details.length>0?details.map((value, index) => (
     <div key={index} data={value} className="container mt-5">
@@ -51,13 +51,8 @@ const ItemDetails = () => {
       <div className="row my-5">
         <div className="overview text-white">
           <p>{details[0].strInstructions}</p>
+          
         </div>
-      </div>
-      <div className="row">
-      
-        {details.map((value , index) => <div>
-          <p>{value.strIngredient1}</p>
-        </div>)} 
       </div>
     </div>
   )):<Loading/>}

@@ -34,3 +34,17 @@ export let getItemsCategory = async (category) => {
     );
     return data.meals;
 }
+
+export let getItemsIngredients = async () => {
+  let { data } = await axios.get(
+      `https://www.themealdb.com/api/json/v1/1/list.php?i=list`
+    );
+    return data.meals;
+}
+
+export let getIngredients = async (ingredient) => {
+  let { data } = await axios.get(
+      `https://www.themealdb.com/api/json/v1/1/filter.php?i=${ingredient}`
+    );
+    return data.meals;
+}

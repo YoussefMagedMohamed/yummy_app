@@ -22,7 +22,7 @@ const Category = () => {
 
   return (
     <>
-    <Offline><Disconnected/></Offline>
+    {/* <Offline><Disconnected/></Offline> */}
 
       {Category.length>0?<div className="container my-5">
         <div className="row">

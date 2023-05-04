@@ -9,9 +9,9 @@ const Item = (props) => {
 
   return (
     <>
-      <Offline>
+      {/* <Offline>
         <Disconnected />
-      </Offline>
+      </Offline> */}
 
       <div className="col-lg-3 col-md-4 col-sm-6">
         <Link to={`/itemDetails/${idMeal}`}>

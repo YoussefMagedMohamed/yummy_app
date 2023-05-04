@@ -22,7 +22,7 @@ const ItemsCategory = () => {
 
   return (
     <>
-    <Offline><Disconnected/></Offline>
+    {/* <Offline><Disconnected/></Offline> */}
 
       {ItemsCategory.length>0?<div className="container my-5">
       <div className="row">

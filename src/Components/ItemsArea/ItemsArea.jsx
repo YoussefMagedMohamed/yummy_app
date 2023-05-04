@@ -24,7 +24,7 @@ export const ItemsArea = () => {
 
   return (
     <>
-    <Offline><Disconnected/></Offline>
+    {/* <Offline><Disconnected/></Offline> */}
 
       {ItemsArea.length>0?<div className="ItemsArea container">
       <div className="row">

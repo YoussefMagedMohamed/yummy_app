@@ -10,6 +10,8 @@ import Search from "./Components/Search/Search";
 import { ItemsArea } from "./Components/ItemsArea/ItemsArea";
 import ItemDetails from "./Components/ItemDetails/ItemDetails";
 import ItemsCategory from "./Containers/ItemsCategory/ItemsCategory";
+import Ingredients from "./Components/Ingredients/Ingredients";
+import DataIngredients from "./Components/DataIngredients/DataIngredients";
 
 function App() {
   let routers = createBrowserRouter([
@@ -25,6 +27,8 @@ function App() {
         { path: "itemDetails/:id", element: <ItemDetails /> },
         { path: "ItemsCategory/:category", element: <ItemsCategory /> },
         { path: "itemsArea/:area", element: <ItemsArea /> },
+        { path: "ingredients", element: <Ingredients /> },
+        { path: "dataIngredients/:ingredient", element: <DataIngredients /> },
         { path: "*", element: <NotFound /> },
       ],
     },

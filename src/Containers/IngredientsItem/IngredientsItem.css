@@ -1,0 +1,35 @@
+.ingredients {
+    padding: 100px;
+    /* background-color: blue; */
+}
+
+.item-ingredients {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(190, 185, 175, 1);
+    padding: 3rem 7rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) ;
+    transition: all 0.5s ease;
+}
+
+.item-ingredients:hover {
+    transform: scale(1.2);
+}
+
+.item-ingredients i {
+    color: red;
+    font-size: 40px;
+}
+
+.item-ingredients h4 {
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #000;
+    border: none;
+}

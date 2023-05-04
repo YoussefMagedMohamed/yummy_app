@@ -9,7 +9,7 @@ const CategoryItem = (props) => {
 
   return (
     <>
-    <Offline><Disconnected/></Offline>
+    {/* <Offline><Disconnected/></Offline> */}
 
       <div className="col-lg-3 col-md-4 col-sm-6 category">
       <Link to={`/ItemsCategory/${strCategory}`}>

@@ -9,7 +9,7 @@ const AreaItem = (props) => {
 
   return (
     <>
-    <Offline><Disconnected/></Offline>
+    {/* <Offline><Disconnected/></Offline> */}
 
     <div className="area col-md-4 col-lg-3 col-sm-6">
       <Link to={`/itemsArea/${strArea}`} className="text-decoration-none">
