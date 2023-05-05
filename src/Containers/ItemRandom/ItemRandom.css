@@ -1,0 +1,21 @@
+.item_random {
+    position: relative;
+    margin: 20px 10px;
+    transition: all 0.5;
+    overflow: hidden;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemRandom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_random:hover .item-layer{
+    top: 0;
+}
