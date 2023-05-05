@@ -49,9 +49,3 @@ export let getIngredients = async (ingredient) => {
   return data.meals;
 };
 
-export let getRandom = async () => {
-  let { data } = await axios.get(
-    "https://www.themealdb.com/api/json/v1/1/random.php"
-  );
-  return data.meals;
-};
